@@ -273,15 +273,15 @@
       "outputAbbreviatedPath" : "\/library\/js\/helper.min.js",
       "fileType" : 64
     },
-    "\/library\/scss\/susy\/_units.scss" : {
+    "\/library\/scss\/_38em.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/susy\/_units.scss",
+      "inputAbbreviatedPath" : "\/library\/scss\/_38em.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_units.css",
+      "outputAbbreviatedPath" : "\/library\/css\/_38em.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -294,15 +294,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/scss\/_color.scss" : {
+    "\/library\/scss\/susy\/_units.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_color.scss",
+      "inputAbbreviatedPath" : "\/library\/scss\/susy\/_units.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_color.css",
+      "outputAbbreviatedPath" : "\/library\/css\/_units.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -318,15 +318,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_38em.scss" : {
+    "\/library\/scss\/_color.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_38em.scss",
+      "inputAbbreviatedPath" : "\/library\/scss\/_color.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_38em.css",
+      "outputAbbreviatedPath" : "\/library\/css\/_color.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -615,6 +615,15 @@
       "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
       "fileType" : 64
     },
+    "\/footer.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/library\/scss\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -626,15 +635,6 @@
       "outputAbbreviatedPath" : "\/library\/css\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/footer.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/footer.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/library\/js\/jquery-1.7.2.min.js" : {
       "ignoreWasSetByUser" : 1,
