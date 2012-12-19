@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Style Guide
+*/
+?>
 <?php get_header(); ?>
 			
 			<div id="content">
@@ -27,21 +32,12 @@
     							<p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p>
 
 						    </footer> <!-- end article footer -->
-						    					
+						    
+						    <?php comments_template(); ?>
+					
 					    </article> <!-- end article -->
 					
-					    <?php endwhile; ?>	
-					
-					        <?php if (function_exists('bones_page_navi')) { ?>
-					            <?php bones_page_navi(); ?>
-					        <?php } else { ?>
-					            <nav class="wp-prev-next">
-					                <ul class="clearfix">
-					        	        <li class="prev-link"><?php next_posts_link(__('&laquo; Older Entries', "bonestheme")) ?></li>
-					        	        <li class="next-link"><?php previous_posts_link(__('Newer Entries &raquo;', "bonestheme")) ?></li>
-					                </ul>
-					            </nav>
-					        <?php } ?>		
+					    <?php endwhile; ?>
 					
 					    <?php else : ?>
 					    

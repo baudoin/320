@@ -1,18 +1,7 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "7978",
+  "creatorBuild" : "8239",
   "files" : {
-    "\/library\/js\/modernizr-2.5.3-min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3-min.min.js",
-      "fileType" : 64
-    },
     "\/library\/js\/plugins.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -22,6 +11,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/library\/js\/plugins.min.min.js",
+      "fileType" : 64
+    },
+    "\/library\/js\/modernizr-2.5.3.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3.min.min.js",
       "fileType" : 64
     },
     "\/header.php" : {
@@ -76,18 +76,6 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/library\/css\/_elements.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/scss\/_site.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_site.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_site.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -228,17 +216,6 @@
       "initialSize" : 60515,
       "fileType" : 8192
     },
-    "\/library\/js\/helper.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/helper.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/helper.min.min.js",
-      "fileType" : 64
-    },
     "\/screenshot.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -262,37 +239,25 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/page.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/library\/js\/helper.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/library\/js\/helper.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/library\/js\/helper.min.js",
       "fileType" : 64
-    },
-    "\/library\/scss\/_38em.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_38em.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_38em.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/bones.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/bones.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/library\/scss\/susy\/_units.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -306,15 +271,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_modernizr.scss" : {
+    "\/library\/scss\/_38em.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_modernizr.scss",
+      "inputAbbreviatedPath" : "\/library\/scss\/_38em.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_modernizr.css",
+      "outputAbbreviatedPath" : "\/library\/css\/_38em.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -329,6 +294,27 @@
       "outputAbbreviatedPath" : "\/library\/css\/_color.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/library\/scss\/_modernizr.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/scss\/_modernizr.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_modernizr.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/library\/bones.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/bones.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/library\/scss\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -373,6 +359,18 @@
       "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-landscape.png",
       "initialSize" : 59157,
       "fileType" : 8192
+    },
+    "\/library\/scss\/_base.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/scss\/_base.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_base.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/library\/scss\/_susy.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -504,6 +502,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/library\/js\/selectivizr.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/selectivizr.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/selectivizr.min.min.js",
+      "fileType" : 64
+    },
     "\/library\/img\/startup\/startup-retina.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -514,6 +523,15 @@
       "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-retina.png",
       "initialSize" : 59301,
       "fileType" : 8192
+    },
+    "\/page-styles.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page-styles.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/library\/scss\/susy\/_settings.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -526,17 +544,6 @@
       "outputAbbreviatedPath" : "\/library\/css\/_settings.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/library\/js\/selectivizr-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/selectivizr-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/selectivizr-min.min.js",
-      "fileType" : 64
     },
     "\/library\/custom-post-type.php" : {
       "ignoreWasSetByUser" : 0,
@@ -592,15 +599,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/style.scss" : {
+    "\/library\/scss\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/style.scss",
+      "inputAbbreviatedPath" : "\/library\/scss\/_variables.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/style.css",
+      "outputAbbreviatedPath" : "\/library\/css\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -624,37 +631,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/scss\/_variables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_variables.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/js\/jquery-1.7.2.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.min.js",
-      "fileType" : 64
-    },
-    "\/library\/admin.php" : {
+    "\/library\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/library\/scss\/style.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/library\/scss\/_page.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -679,6 +666,26 @@
       "outputAbbreviatedPath" : "\/library\/css\/_texture.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/library\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/js\/jquery-1.7.2.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.min.js",
+      "fileType" : 64
     },
     "\/library\/scss\/susy\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -710,6 +717,7 @@
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
+    "kitAutoOutputPathStyle" : 0,
     "lessOutputStyle" : 0,
     "hamlAutoOutputPathReplace2" : "",
     "draggedImportConcatenationStyle" : 1,
@@ -741,6 +749,7 @@
     "hamlOutputStyle" : 0,
     "stylusAutoOutputPathRelativePath" : "..\/css",
     "jsCheckerIndent" : 4,
+    "kitAutoOutputPathRelativePath" : "",
     "lessAutoOutputPathReplace2" : "css",
     "jadeAutoOutputPathReplace2" : "",
     "shouldRunBless" : 0,
@@ -765,7 +774,10 @@
     "coffeeAutoOutputPathReplace1" : "",
     "hamlUseDoubleQuotes" : 0,
     "coffeeAutoOutputPathReplace2" : "",
+    "kitAutoOutputPathReplace1" : "",
     "uglifyReservedNamesString" : "",
+    "coffeeOutputStyle" : 0,
+    "slimAutoOutputPathRelativePath" : "",
     "jsHintFlags" : {
       "latedef" : 1,
       "newcap" : 1,
@@ -824,8 +836,6 @@
       "laxbreak" : 0,
       "plusplus" : 0
     },
-    "coffeeOutputStyle" : 0,
-    "slimAutoOutputPathRelativePath" : "",
     "jsLintFlags" : {
       "white" : 0,
       "bitwise" : 0,
@@ -851,7 +861,6 @@
       "confusion" : 0,
       "evil" : 0,
       "on" : 0,
-      "cap" : 0,
       "windows" : 0,
       "devel" : 0,
       "rhino" : 0,
@@ -877,6 +886,7 @@
     "slimAutoOutputPathReplace2" : "",
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
+    "kitAutoOutputPathReplace2" : "",
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0

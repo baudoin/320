@@ -30,7 +30,7 @@ white-space : normal;
 
 small {
 @include font-size(14);
-color : $lightgrey; }
+color : $lightgray; }
 }
 
 p {
@@ -216,7 +216,7 @@ input:-moz-placeholder {
 
 .help-block,
 .help-inline {
-color : $grey; }
+color : $gray; }
 
 .help-block {
 display : block;

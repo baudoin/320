@@ -27,7 +27,7 @@
 	<!-- end of wordpress head -->
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/selectivizr-min.js"></script>
+	<script src="js/selectivizr.min.js"></script>
 	<![endif]-->
 		
 	<!-- drop Google Analytics Here -->

@@ -7,23 +7,9 @@
 
 // ==========================================================
 
-/* Variables =================================================== */
+/* Variables ============================================= */
 
-// greyscale
-
-$black 			: rgb(0,0,0);
-$darkgrey 		: lighten($black, 25%);
-$grey 			: lighten($black, 50%);
-$lightgrey 		: lighten($black, 75%);
-$lightergrey 	: lighten($black, 90%);
-$white 			: rgb(255,255,255);
-
-// 1. ROOT 					==============================
-
-$bodycolor : $white;
-$textcolor : black;
-
-// 2. TYPOGRAPHY 			==============================
+// TYPOGRAPHY 				==============================
 
 $basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $basefontsize : 16;
@@ -37,15 +23,28 @@ $altlineheight : 1.35em;
 
 $codefont : Monaco, Courier New, monospace;
 
-// 3. COLOUR 				==============================
+// COLOR 					==============================
 
+// grayscale
+
+$black 			: rgb(0,0,0);
+$darkgray 		: lighten($black, 25%);
+$gray 			: lighten($black, 50%);
+$lightgray 		: lighten($black, 75%);
+$lightergray 	: lighten($black, 90%);
+$white 			: rgb(255,255,255);
+
+$blue			: rgb(78,187,255);
+
+$bodycolor 		: $white;
+$textcolor 		: $darkgray;
 $basecolor 		: rgb(45,53,62);
 $compcolor 		: adjust-hue($basecolor, 180);
 $bordercolor    : lighten($basecolor, 60%);
 
 // Links
 
-$linkcolor 		    : rgb(1,53,104);
+$linkcolor 		    : $blue;
 $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited   : darken($linkcolorhover, 10);
 $linkcolorfocus 	: darken($linkcolorvisited, 10);
@@ -95,15 +94,15 @@ $alertwarningtext 	: darken($warningcolor, 20%);
 
 // badges
 
-$badgebackground 	: $lightergrey;
-$badgecolor 		: $grey;
+$badgebackground 	: $lightergray;
+$badgecolor 		: $gray;
 
 // buttons
 
-$buttonbackground 	: $lightergrey;
+$buttonbackground 	: $lightergray;
 $buttonbordercolor 	: darken($buttonbackground, 10%);
 $buttonbottombordercolor : darken($buttonbordercolor, 10%);
-$buttoncolor 		: $darkgrey;
+$buttoncolor 		: $darkgray;
 $buttonborderwidth	: 1px;
 $buttonborderstyle	: solid;
 
@@ -133,13 +132,9 @@ $inputborderwidth	: 1px;
 $inputborderstyle	: solid;
 $inputhover 		: lighten($basecolor, 20%);
 $inputfocus 		: $basecolor, 40%;
-$placeholdercolor 	: $lightgrey;
+$placeholdercolor 	: $lightgray;
 
-// 6. LAYOUT 				==============================
+// LAYOUT 					==============================
 
 $baseline : $baselineheight;
 $gutterwidth : 24px;
-
-//  7. VENDOR-SPECIFIC 		==============================
-//  8. MODERNIZR 			==============================
-//  9. TEMPLATE SPECIFICS 	==============================

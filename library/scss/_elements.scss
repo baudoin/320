@@ -34,16 +34,16 @@ overflow : hidden; }
 // figure
 
 figure {
-margin-bottom : $baselineheight;
+	margin-bottom : $baselineheight;
 
-img {
-margin-bottom : $baselineheight / 4; }
+	img {
+	margin-bottom : $baselineheight / 4; }
 
-figcaption {
-display : block;
-font-weight : normal;
-@include font-size(14);
-color : $grey; }
+	figcaption {
+	display : block;
+	font-weight : normal;
+	@include font-size(14);
+	color : $gray; }
 }
 
 // list-bordered
