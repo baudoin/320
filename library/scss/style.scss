@@ -9,58 +9,29 @@ Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
 
 // IMPORTS 				=======================================
 
-// Compass
-@import "compass";
+@import "compass"; // Compass
+@import "reset"; // CSS reset
+@import "mixins"; // Mixins
+@import "susy"; // Susy Grids
+ 
+/* Typography */
+ 
+@import "typography"; // Block level (h1, p) and text-level (em, strong) type
 
-// CSS reset
-@import "reset";
+/* UI */
 
-// Variables and mixins
-@import "variables";
-@import "mixins";
+@import "texture"; // Alerts, badges, boxes and gradients
+@import "forms"; // Standard form controls
+@import "buttons"; // Button styles (optional)
+@import "font-awesome"; // Font Awesome icon fonts (optional)
+@import "tables"; // Tables
+@import "nav"; // Navigation
 
-// Susy Grids
-@import "susy";
+/* Base Site Styles */
 
-// Site wide styles (html, body)
 @import "base";
 
-// TYPOGRAPHY 			=======================================
-
-// Block level (h1, p) and text-level (em, strong) type
-@import "typography";
-
-// UI 					=======================================
-
-// Colour interaction semantics
-@import "color";
-
-// Alerts, badges, boxes and gradients
-@import "texture";
-
-// Font Awesome icon fonts (optional)
-@import "font-awesome";
-
-// ELEMENTS 			=======================================
-
-// Figures, images and other elements
-@import "elements";
-
-// Standard form controls
-@import "forms";
-
-// Button styles (optional)
-@import "buttons";
-
-// Tables
-@import "tables";
-
-// LAYOUT 				=======================================
-
-// Page level layout styles (banner, navigation, content, contentinfo)
-@import "page";
-
-//  MEDIA QUERIES 		=======================================
+/* Media Queries */
 
 @media print {
 @import "print";

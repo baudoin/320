@@ -9,6 +9,145 @@
 
 /* Mixins =================================================== */
 
+// VARIABLES 				==============================
+
+/* Typography */
+
+$basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$basefontsize : 16;
+$baselineheight : 1.33em;
+$baseheadingfont : inherit;
+$baseheadingfontweight : bold;
+$baseheadingfontcolor : inherit;
+
+$altfont : Cambria, Georgia, Times, "Times New Roman";
+$altlineheight : 1.35em;
+
+$codefont : Monaco, Courier New, monospace;
+
+/* Color */
+
+// grayscale
+
+$black 			: rgb(0,0,0);
+$darkgray 		: lighten($black, 25%);
+$gray 			: lighten($black, 50%);
+$lightgray 		: lighten($black, 75%);
+$lightergray 	: lighten($black, 90%);
+$white 			: rgb(255,255,255);
+
+$blue			: rgb(78,187,255);
+
+$bodycolor 		: $white;
+$textcolor 		: $darkgray;
+$basecolor 		: rgb(45,53,62);
+$compcolor 		: adjust-hue($basecolor, 180);
+$bordercolor    : lighten($basecolor, 60%);
+
+// links
+
+$linkcolor 		    : $blue;
+$linkcolorhover 	: darken($linkcolor, 10);
+$linkcolorvisited   : $blue;
+$linkcolorfocus 	: darken($linkcolorvisited, 10);
+
+// palettes
+
+$alertcolor 	: rgb(252,248,227);
+$errorcolor 	: rgb(218,79,73);
+$infocolor 		: rgb(217,237,247);
+$inverscolor 	: rgb(65,65,65);
+$successcolor 	: rgb(91,183,91);
+$warningcolor 	: rgb(250,167,50);
+
+// alert
+
+$alertbordercolor	: darken($alertcolor, 20%);
+$alertborderwidth 	: 1px;
+$alertborderstyle 	: solid;
+$alerttext			: darken($alertcolor, 60%);
+
+// alert-error
+$alerterrorcolor 	: lighten($errorcolor, 30%);
+$alerterrorborder  	: lighten($errorcolor, 20%);
+$alerterrortext 	: $errorcolor;
+
+// alert-info
+$alertinfocolor 	: $infocolor;
+$alertinfoborder  	: lighten($infocolor, 20%);
+$alertinfotext 		: darken($infocolor, 50%);
+
+// alert-inverse
+$alertinversecolor 	: $inverscolor;
+$alertinverseborder : $black;
+$alertinversetext 	: $white;
+
+// alert-success
+$alertsuccesscolor 	: lighten($successcolor, 30%);
+$alertsuccessborder : lighten($successcolor, 20%);
+$alertsuccesstext 	: darken($successcolor, 20%);
+
+// alert-warning
+$alertwarningcolor 	: lighten($warningcolor, 30%);
+$alertwarningborder : lighten($warningcolor, 20%);
+$alertwarningtext 	: darken($warningcolor, 20%);
+
+// badges
+
+$badgebackground 	: $lightergray;
+$badgecolor 		: $gray;
+
+// buttons
+
+$buttonbackground 	: $lightergray;
+$buttonbordercolor 	: darken($buttonbackground, 10%);
+$buttonbottombordercolor : darken($buttonbordercolor, 10%);
+$buttoncolor 		: $darkgray;
+$buttonborderwidth	: 1px;
+$buttonborderstyle	: solid;
+
+// boxes (well)
+
+$wellbackground		: lighten($basecolor, 80%);
+$wellbordercolor	: darken($wellbackground, 15%);
+$wellborderwidth	: 1px;
+$wellborderstyle	: solid;
+$wellshadow			: darken($wellbackground, 8%);
+$wellshadowblur		: 5px;
+
+// tables
+
+$tablebackground 	: transparent;
+$tablestripe 		: lighten($basecolor, 60%);
+$tablehover 		: lighten($basecolor, 50%);
+$tableborder 		: lighten($basecolor, 40%);
+$tableborderwidth	: 1px;
+$tableborderstyle	: solid;
+
+// forms
+
+$inputbackground 	: $white;
+$inputborder 		: lighten($basecolor, 40%);
+$inputborderwidth	: 1px;
+$inputborderstyle	: solid;
+$inputhover 		: lighten($basecolor, 20%);
+$inputfocus 		: $basecolor, 40%;
+$placeholdercolor 	: $lightgray;
+
+/* Layout */
+
+$baseline : $baselineheight;
+
+$textDirection: ltr;
+$defaultFloat: left;
+$defaultOpposite: right;
+
+// Nav Bar Settings
+
+$navBarHeight: 40px;
+$navFlyoutBaseWidth: 250px;
+
+
 // TYPOGRAPHY 				==============================
 
 @mixin font-size($font-size: 16){
@@ -20,9 +159,8 @@ overflow : hidden;
 text-overflow : ellipsis;
 white-space : nowrap; }
 
-// TEXTURE 					==============================
 
-// gradients
+// GRADIENTS 					==============================
 
 @mixin horizontal($startColor : $white, $endColor : $lightergrey) {
 	background-color: $endColor;
@@ -58,10 +196,135 @@ white-space : nowrap; }
 
 // ELEMENTS 				==============================
 
+// links 
+
+a {
+	text-decoration : none;
+	color : $linkcolor;
+
+	&:visited {
+		color : $linkcolorvisited; 
+	}
+
+	&:hover {
+		text-decoration : underline;
+		color : $linkcolorhover; 
+	}
+
+	&:focus {
+		outline : thin dotted;
+		color : $linkcolorfocus; 
+	}
+
+	&:hover,
+	&:active {
+		outline : 0; 
+	}
+}
+
+::-moz-selection {
+	background-color : lighten($basecolor, 65%);
+	color : $basecolor;
+	text-shadow : none; 
+}
+
+::selection {
+	background-color : lighten($basecolor, 65%);
+	color : $basecolor;
+	text-shadow : none; 
+}
+
+// Figures & Images
+
+hr {
+	display : block;
+	margin : 1em 0;
+	padding : 0;
+	height : 1px;
+	border : 0;
+	border-top : 1px solid $bordercolor;
+	border-bottom : 1px solid $white; 
+}
+
+// img
+
+img {
+	max-width : 100%;
+	border-width : 0;
+	vertical-align : middle;
+	-ms-interpolation-mode : bicubic; 
+}
+
+svg:not(:root) {
+	overflow : hidden; 
+}
+
+// figure
+
+figure {
+	margin-bottom : $baselineheight;
+
+	img {
+		margin-bottom : $baselineheight / 4; 
+	}
+
+	figcaption {
+		display : block;
+		font-weight : normal;
+		@include font-size(14);
+		color : $gray; 
+	}
+}
+
+// list-bordered
+
+.list-bordered {
+	list-style-type : none;
+	margin : 0 0 $baselineheight 0;
+	padding : 0;
+
+	li {
+		margin-bottom : $baselineheight / 4;
+		padding-bottom : $baselineheight / 4;
+		border-bottom : 1px dashed $bordercolor; 
+	}
+
+	li:last-child {
+		margin-bottom : 0;
+		padding-bottom : 0;
+		border-bottom-width : 0; 
+	}
+}
+
 // @include background-alpha(VALUE VALUE);
 
 @mixin background-alpha($color: $white, $alpha: 1) {
 	background-color : hsla(hue($color), saturation($color), lightness($color), $alpha); 
+}
+
+// CSS Triangle
+
+// Create CSS Triangles in a Breeze
+
+@mixin cssTriangle($triangleSize, $triangleColor, $triangleDirection) {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: solid $triangleSize;
+	@if ($triangleDirection == top) {
+	  border-color: $triangleColor transparent transparent transparent;
+	}
+	@if ($triangleDirection == bottom) {
+	  border-color: transparent transparent $triangleColor transparent;
+	}
+	@if ($triangleDirection == left) {
+	  border-color: transparent transparent transparent $triangleColor;
+	}
+	@if ($triangleDirection == right) {
+	  border-color: transparent $triangleColor transparent transparent;
+	}
+	// .example { @include cssTriangle(5px, #fff, bottom); }
 }
 
 // Chrome Frame

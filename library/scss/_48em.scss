@@ -18,9 +18,15 @@ $total-columns  : 12;
 
 #main {
     @include span-columns(9 omega,12); // Susy
+    @include box-sizing(border-box);
+
+    padding: $gutter-width;
 }
 #sidebar {
     @include span-columns(3,12); // Susy
+    @include box-sizing(border-box);
+    
+    padding: $gutter-width;
 }
 
 // TYPOGRAPHY 			=====================================

@@ -114,7 +114,7 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/modernizr-2.5.3.min.js', array(), '2.5.3', false );
+    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/modernizr-2.6.2.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -130,7 +130,6 @@ function bones_scripts_and_styles() {
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.min.js', array( 'jquery' ), '', true );
     wp_register_script( 'bones-plugins-js', get_stylesheet_directory_uri() . '/library/js/plugins.min.js', array( 'jquery' ), '', true );
-    wp_register_script( 'bones-helper-js', get_stylesheet_directory_uri() . '/library/js/helper.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
@@ -138,7 +137,6 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'bones-plugins-js' );
-    wp_enqueue_script( 'bones-helper-js' );
 
   }
 }
@@ -201,8 +199,8 @@ function bones_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
+			'main-nav' => __( 'The Main Menu', 'bonestheme' ),
+			'footer-links' => __( 'Footer Links', 'bonestheme' )
 		)
 	);
 } /* end bones theme support */
@@ -213,50 +211,120 @@ MENUS & NAVIGATION
 *********************/
 
 // the main menu
-function bones_main_nav() {
-	// display the wp3 menu if available
-    wp_nav_menu(array(
-    	'container' => false,                           // remove nav container
-    	'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-    	'menu' => 'The Main Menu',                      // nav name
-    	'menu_class' => 'nav top-nav clearfix',         // adding custom nav class
-    	'theme_location' => 'main-nav',                 // where it's located in the theme
-    	'before' => '',                                 // before the menu
-        'after' => '',                                  // after the menu
-        'link_before' => '',                            // before each link
-        'link_after' => '',                             // after each link
-        'depth' => 0,                                   // limit the depth of the nav
-    	'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+function main_nav() {
+	wp_nav_menu(array( 
+        'container' => false,             // remove menu container
+        'container_class' => '',          // class of container
+        'menu' => '',                     // menu name
+        'menu_class' => 'nav-bar',        // adding custom nav class
+        'theme_location' => 'main-nav',  // where it's located in the theme
+        'before' => '',                   // before each link <a>
+        'after' => '',                    // after each link </a>
+        'link_before' => '',              // before each link text
+        'link_after' => '',               // after each link text
+        'depth' => 2,                     // limit the depth of the nav
+    	'fallback_cb' => 'main_nav_fallback',   // fallback function (see below)
+        'walker' => new nav_walker()      // walker to customize menu (see foundation-nav-walker)
 	));
 } /* end bones main nav */
 
 // the footer menu (should you choose to use one)
-function bones_footer_links() {
+function footer_links() {
 	// display the wp3 menu if available
     wp_nav_menu(array(
-    	'container' => '',                              // remove nav container
-    	'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-    	'menu' => 'Footer Links',                       // nav name
-    	'menu_class' => 'nav footer-nav clearfix',      // adding custom nav class
-    	'theme_location' => 'footer-links',             // where it's located in the theme
-    	'before' => '',                                 // before the menu
-        'after' => '',                                  // after the menu
-        'link_before' => '',                            // before each link
-        'link_after' => '',                             // after each link
-        'depth' => 0,                                   // limit the depth of the nav
-    	'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+    	'container' => '',
+    	'container_class' => 'footer-links clearfix',
+    	'menu' => 'Footer Links',
+    	'menu_class' => 'nav footer-nav clearfix',
+    	'theme_location' => 'footer-links',
+    	'before' => '',
+        'after' => '',
+        'link_before' => '',
+        'link_after' => '',
+        'depth' => 0,
+    	'fallback_cb' => 'footer_links_fallback'  // fallback function
 	));
 } /* end bones footer link */
 
 // this is the fallback for header menu
-function bones_main_nav_fallback() {
+function main_nav_fallback() {
 	wp_page_menu( 'show_home=Home' );
 }
 
 // this is the fallback for footer menu
-function bones_footer_links_fallback() {
+function footer_links_fallback() {
 	/* you can put a default here if you like */
 }
+
+/* 
+Customize the output of menus for Foundation nav classes and add descriptions
+ 
+http://www.kriesi.at/archives/improve-your-wordpress-navigation-menu-output
+http://wikiduh.com/1541/custom-nav-menu-walker-function-to-add-classes
+http://code.hyperspatial.com/1514/twitter-bootstrap-walker-classes/ 
+*/
+class nav_walker extends Walker_Nav_Menu {
+	function start_el(&$output, $item, $depth, $args) {
+		global $wp_query;
+		
+		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+ 
+		$class_names = $value = '';
+ 
+		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
+		
+		if (in_array( 'current-menu-item', $classes )){$classes[]= 'active';}
+		if ($args->has_children){$classes[] = 'has-flyout';}
+ 
+		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+        $class_names = strlen( trim( $class_names ) ) > 0 ? ' class="' . esc_attr( $class_names ) . '"' : '';
+ 
+		$output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+ 
+		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+		$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+		$attributes .= ! empty( $item->description ) ? ' class="has-desc"' : '';
+ 
+		$description  = ! empty( $item->description ) ? '<span class="nav-desc">'.esc_attr( $item->description ).'</span>' : '';
+ 
+		$item_output = $args->before;
+		$item_output .= '<a'. $attributes .'>';
+		$item_output .= $args->link_before .apply_filters( 'the_title', $item->title, $item->ID );
+		$item_output .= $description.$args->link_after;
+           	if ( $args->has_children && $depth == 0 ) {
+               		$item_output .= '</a><a href="#" class="flyout-toggle"><span> </span></a>';
+           	 } else {
+                	$item_output .= '</a>';
+            	}
+		$item_output .= $args->after;
+ 
+		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+	}
+    function end_el(&$output, $item, $depth) {
+        $output .= "</li>\n";
+    }
+			
+	function start_lvl(&$output, $depth) {
+		$indent = str_repeat("\t", $depth);
+		$output .= "\n$indent<ul class=\"sub-menu flyout\">\n";
+	}
+    function end_lvl(&$output, $depth) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent</ul>\n";
+    }
+				
+	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+		$id_field = $this->db_fields['id'];
+		if ( is_object( $args[0] ) ) {
+			$args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
+		}
+		return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+	}  	
+	
+} /* end nav walker */
+
 
 /*********************
 RELATED POSTS FUNCTION
@@ -362,7 +430,5 @@ function bones_excerpt_more($more) {
 	// edit here if you like
 	return '...  <a href="'. get_permalink($post->ID) . '" title="Read '.get_the_title($post->ID).'">Read more &raquo;</a>';
 }
-
-
 
 ?>

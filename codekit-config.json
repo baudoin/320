@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8239",
+  "creatorBuild" : "8241",
   "files" : {
     "\/library\/js\/plugins.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -11,17 +11,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/library\/js\/plugins.min.min.js",
-      "fileType" : 64
-    },
-    "\/library\/js\/modernizr-2.5.3.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/modernizr-2.5.3.min.min.js",
       "fileType" : 64
     },
     "\/header.php" : {
@@ -55,6 +44,17 @@
       "initialSize" : 564,
       "fileType" : 8192
     },
+    "\/library\/js\/plugins\/jquery.placeholder.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.placeholder.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.placeholder.min.js",
+      "fileType" : 64
+    },
     "\/library\/scss\/_print.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -67,17 +67,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_elements.scss" : {
+    "\/library\/js\/plugins\/jquery.foundation.navigation.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_elements.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_elements.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.min.js",
+      "fileType" : 64
     },
     "\/library\/js\/scripts.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -132,7 +131,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_functions.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_functions.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_functions.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -144,7 +143,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_margin.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_margin.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_margin.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -189,7 +188,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_support.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_support.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_support.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -205,6 +204,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/library\/js\/plugins\/helper.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/helper.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/helper.min.js",
+      "fileType" : 64
+    },
     "\/library\/img\/startup\/startup-tablet-portrait.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -215,6 +225,17 @@
       "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-portrait.png",
       "initialSize" : 60515,
       "fileType" : 8192
+    },
+    "\/library\/js\/modernizr-2.6.2.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/modernizr-2.6.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/modernizr-2.6.2.min.min.js",
+      "fileType" : 64
     },
     "\/screenshot.png" : {
       "ignoreWasSetByUser" : 0,
@@ -248,29 +269,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/js\/helper.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/helper.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/helper.min.js",
-      "fileType" : 64
-    },
-    "\/library\/scss\/susy\/_units.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/susy\/_units.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_units.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/library\/scss\/_38em.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -283,17 +281,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_color.scss" : {
+    "\/library\/bones.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_color.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_color.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/library\/bones.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/library\/scss\/_modernizr.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -307,14 +302,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/bones.php" : {
+    "\/library\/scss\/susy\/_units.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/bones.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/library\/scss\/susy\/_units.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_units.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/library\/scss\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -360,18 +358,6 @@
       "initialSize" : 59157,
       "fileType" : 8192
     },
-    "\/library\/scss\/_base.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_base.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_base.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/library\/scss\/_susy.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -381,6 +367,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/library\/css\/_susy.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/library\/scss\/_base.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/scss\/_base.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_base.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -437,7 +435,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_background.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_background.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_background.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -459,7 +457,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/config.rb",
       "fileType" : 32768
     },
     "\/library\/js\/plugins.js" : {
@@ -468,7 +466,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/library\/js\/plugins.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/library\/js\/plugins.min.js",
       "fileType" : 64
@@ -541,7 +539,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_settings.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_settings.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_settings.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -599,38 +597,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_variables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_variables.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/js\/scripts.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/scripts.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
-      "fileType" : 64
-    },
-    "\/footer.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/footer.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/library\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -643,9 +609,50 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_page.scss" : {
+    "\/library\/js\/scripts.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/scripts.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
+      "fileType" : 64
+    },
+    "\/library\/scss\/_nav.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/scss\/_nav.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_nav.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/footer.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/scss\/_page.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/library\/scss\/_page.scss",
@@ -667,15 +674,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/admin.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/library\/js\/jquery-1.7.2.min.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -695,7 +693,7 @@
       "inputAbbreviatedPath" : "\/library\/scss\/susy\/_grid.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_grid.css",
+      "outputAbbreviatedPath" : "\/library\/scss\/css\/_grid.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -713,7 +711,20 @@
     }
   },
   "manualImportLinks" : [
-
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/helper.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    }
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
@@ -893,7 +904,7 @@
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "320-theme",
+    "displayValue" : "320-theme-bu",
     "displayValueWasSetByUser" : 0,
     "compassEnabled" : 1
   }

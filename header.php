@@ -49,7 +49,7 @@
 				<?php // bloginfo('description'); ?>
 				
 				<nav role="navigation">
-					<?php bones_main_nav(); ?>
+					<?php main_nav(); ?>
 				</nav>
 			
 			</div> <!-- end #inner-header -->
